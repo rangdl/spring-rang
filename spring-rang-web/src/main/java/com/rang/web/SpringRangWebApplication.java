@@ -1,16 +1,13 @@
-package com.rang.core;
+package com.rang.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-/**
- * @author rdl
- */
 @SpringBootApplication
-public class SpringRangCoreApplication {
+public class SpringRangWebApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringRangCoreApplication.class, args);
+		SpringApplication.run(SpringRangWebApplication.class, args);
 	}
 
 }
