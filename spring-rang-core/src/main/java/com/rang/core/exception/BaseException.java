@@ -1,10 +1,10 @@
-package com.rang.tool.exception;
+package com.rang.core.exception;
 
-import com.rang.tool.contant.StatusEnum;
+import com.rang.core.contant.StatusEnum;
 
 /**
+ * 全局基础异常类
  * @ClassName BaseException
- * @Description 全局基础异常类
  * @Author rdl
  * @Date 2020/6/20 16:18
  * @Version 1.0

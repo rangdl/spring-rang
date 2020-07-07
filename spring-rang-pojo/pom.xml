@@ -10,7 +10,12 @@
   <groupId>com.rang</groupId>
   <artifactId>spring-rang-pojo</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
   <name>spring-rang-pojo</name>
   <description>Demo project for Spring Boot</description>
 
+  <dependencies>
+
+  </dependencies>
 </project>

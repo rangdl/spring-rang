@@ -1,4 +1,4 @@
-package com.rang.tool.contant;
+package com.rang.core.contant;
 
 /**
  * @ClassName StatusEnum

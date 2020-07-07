@@ -1,7 +1,7 @@
-package com.rang.tool.model;
+package com.rang.core.model;
 
-import com.rang.tool.contant.StatusEnum;
-import com.rang.tool.exception.BaseException;
+import com.rang.core.contant.StatusEnum;
+import com.rang.core.exception.BaseException;
 import com.sun.istack.internal.Nullable;
 import java.io.Serializable;
 

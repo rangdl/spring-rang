@@ -10,6 +10,8 @@
   <groupId>com.rang</groupId>
   <artifactId>spring-rang-core</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
   <name>spring-rang-core</name>
   <description>Demo project for Spring Boot</description>
 

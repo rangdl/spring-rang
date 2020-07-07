@@ -1,11 +1,14 @@
 package com.rang.web.controller;
 
-import com.rang.tool.model.ResultVO;
+import com.rang.core.contant.StatusEnum;
+import com.rang.core.exception.JsonException;
+import com.rang.core.exception.PageException;
+import com.rang.core.model.ResultVO;
 import java.util.HashMap;
 import java.util.Map;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 /**
  * @ClassName controller
@@ -32,5 +35,15 @@ public class TestController {
 		map.put("2","aaa");
 		map.put("3","色灯阿森");
 		return map;
+	}
+
+	@GetMapping("/json")
+	public ResultVO jsonException() {
+		throw new JsonException(StatusEnum.ERROR);
+	}
+
+	@GetMapping("/page")
+	public ModelAndView pageException() {
+		throw new PageException(StatusEnum.ERROR);
 	}
 }
