@@ -1,5 +1,7 @@
 package com.rang.service.user;
 
+import com.rang.pojo.entity.User;
+
 /**
  * @ClassName UserService
  * @Description TODO
@@ -9,4 +11,5 @@ package com.rang.service.user;
  **/
 public interface UserService {
 
+	Long saveUser(User user);
 }

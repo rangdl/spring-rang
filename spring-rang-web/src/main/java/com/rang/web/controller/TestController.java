@@ -4,8 +4,12 @@ import com.rang.core.contant.StatusEnum;
 import com.rang.core.exception.JsonException;
 import com.rang.core.exception.PageException;
 import com.rang.core.model.ResultVO;
+import com.rang.pojo.entity.User;
+import com.rang.service.user.UserService;
+import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
@@ -20,8 +24,9 @@ import org.springframework.web.servlet.ModelAndView;
 @RestController
 public class TestController {
 
-//	@Autowired
-//	UserMapper userMapper;
+	@Autowired
+	private UserService userService;
+
 
 	@GetMapping("/index")
 	public ResultVO index(){
@@ -33,9 +38,9 @@ public class TestController {
 	}
 	@GetMapping("/hello")
 	public ResultVO hello(){
-//		User testSave3 = User.builder().name("testSave3").age(11).state(1).time(LocalDate.now()).build();
-//		userMapper.insertUseGeneratedKeys(testSave3);
-		return ResultVO.ofSuccess();
+		User testSave3 = User.builder().name("testSave3").age(11).state(1).time(LocalDate.now()).build();
+		Long id = userService.saveUser(testSave3);
+		return ResultVO.ofSuccess(id);
 	}
 
 	@GetMapping("/json")

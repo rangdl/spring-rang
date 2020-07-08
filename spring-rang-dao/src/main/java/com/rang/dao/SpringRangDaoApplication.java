@@ -11,8 +11,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Version 1.0
  **/
 @SpringBootApplication
-public class SpringRangMapperApplication {
+public class SpringRangDaoApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(SpringRangMapperApplication.class, args);
+		SpringApplication.run(SpringRangDaoApplication.class, args);
 	}
 }

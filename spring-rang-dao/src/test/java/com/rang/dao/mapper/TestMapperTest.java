@@ -1,6 +1,6 @@
 package com.rang.dao.mapper;
 
-import com.rang.dao.SpringRangMapperApplicationTests;
+import com.rang.dao.SpringRangDaoApplicationTests;
 import com.rang.pojo.entity.User;
 import java.time.LocalDate;
 import lombok.extern.slf4j.Slf4j;
@@ -16,7 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @Version 1.0
  **/
 @Slf4j
-public class TestMapperTest extends SpringRangMapperApplicationTests {
+public class TestMapperTest extends SpringRangDaoApplicationTests {
 
 	@Autowired
 	private UserMapper userMapper;

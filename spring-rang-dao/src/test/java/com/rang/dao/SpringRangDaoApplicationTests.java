@@ -9,7 +9,7 @@ import tk.mybatis.spring.annotation.MapperScan;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @MapperScan(basePackages = {"com.rang.dao.mapper"})
-public class SpringRangMapperApplicationTests {
+public class SpringRangDaoApplicationTests {
 
 	@Test
 	public void contextLoads() {
