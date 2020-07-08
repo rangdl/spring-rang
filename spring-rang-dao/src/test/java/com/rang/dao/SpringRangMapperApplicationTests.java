@@ -1,4 +1,4 @@
-package com.rang.mapper;
+package com.rang.dao;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -8,7 +8,7 @@ import tk.mybatis.spring.annotation.MapperScan;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-@MapperScan(basePackages = {"com.rang.mapper.mapper"})
+@MapperScan(basePackages = {"com.rang.dao.mapper"})
 public class SpringRangMapperApplicationTests {
 
 	@Test

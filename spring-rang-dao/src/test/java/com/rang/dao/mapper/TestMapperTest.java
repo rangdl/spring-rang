@@ -1,6 +1,6 @@
-package com.rang.mapper.mapper;
+package com.rang.dao.mapper;
 
-import com.rang.mapper.SpringRangMapperApplicationTests;
+import com.rang.dao.SpringRangMapperApplicationTests;
 import com.rang.pojo.entity.User;
 import java.time.LocalDate;
 import lombok.extern.slf4j.Slf4j;

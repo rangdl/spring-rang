@@ -1,4 +1,4 @@
-package com.rang.mapper.mapper;
+package com.rang.dao.mapper;
 
 import com.rang.pojo.entity.User;
 import org.springframework.stereotype.Component;

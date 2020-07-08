@@ -8,7 +8,7 @@ import tk.mybatis.spring.annotation.MapperScan;
  * @author rdl
  */
 @SpringBootApplication
-@MapperScan(basePackages = {"com.rang.mapper"})
+@MapperScan(basePackages = {"com.rang.dao.mapper"})
 public class SpringRangWebApplication {
 
 	public static void main(String[] args) {
