@@ -20,6 +20,9 @@ import org.springframework.web.servlet.ModelAndView;
 @RestController
 public class TestController {
 
+//	@Autowired
+//	UserMapper userMapper;
+
 	@GetMapping("/index")
 	public ResultVO index(){
 		Map<String,Object> map = new HashMap<>(3);
@@ -29,12 +32,10 @@ public class TestController {
 		return ResultVO.ofSuccess(map);
 	}
 	@GetMapping("/hello")
-	public Map hello(){
-		Map<String,Object> map = new HashMap<>(3);
-		map.put("1",123);
-		map.put("2","aaa");
-		map.put("3","色灯阿森");
-		return map;
+	public ResultVO hello(){
+//		User testSave3 = User.builder().name("testSave3").age(11).state(1).time(LocalDate.now()).build();
+//		userMapper.insertUseGeneratedKeys(testSave3);
+		return ResultVO.ofSuccess();
 	}
 
 	@GetMapping("/json")

@@ -9,8 +9,10 @@
   <version>1.0-SNAPSHOT</version>
   <modules>
     <module>spring-rang-core</module>
-    <module>spring-rang-pojo</module>
     <module>spring-rang-tool</module>
+    <module>spring-rang-pojo</module>
+    <module>spring-rang-dao</module>
+    <module>spring-rang-service</module>
     <module>spring-rang-web</module>
   </modules>
   <packaging>pom</packaging>
@@ -25,11 +27,14 @@
     <java.version>1.8</java.version>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <spring.boot.version>2.2.8.RELEASE</spring.boot.version>
+    <spring.boot.version>2.1.0.RELEASE</spring.boot.version>
     <mysql.version>8.0.12</mysql.version>
     <hutool.version>5.0.0</hutool.version>
     <guava.version>28.1-jre</guava.version>
     <user.agent.version>1.20</user.agent.version>
+    <mybatis.mapper.version>2.0.4</mybatis.mapper.version>
+    <mybatis.pagehelper.version>1.2.9</mybatis.pagehelper.version>
+
     <spring.rang>0.0.1-SNAPSHOT</spring.rang>
   </properties>
 
@@ -93,6 +98,16 @@
       <dependency>
         <groupId>com.rang</groupId>
         <artifactId>spring-rang-tool</artifactId>
+        <version>${spring.rang}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.rang</groupId>
+        <artifactId>spring-rang-dao</artifactId>
+        <version>${spring.rang}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.rang</groupId>
+        <artifactId>spring-rang-service</artifactId>
         <version>${spring.rang}</version>
       </dependency>
     </dependencies>

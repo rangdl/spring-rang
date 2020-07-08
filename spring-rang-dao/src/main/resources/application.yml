@@ -1,14 +1,4 @@
-server:
-  port: 8080
-  servlet:
-    context-path: /
 spring:
-  thymeleaf:
-    cache: false
-    mode: HTML
-    encoding: UTF-8
-    servlet:
-      content-type: text/html
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/spring-boot-demo?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false&serverTimezone=GMT%2B8
     username: root
@@ -17,10 +7,10 @@ spring:
     type: com.zaxxer.hikari.HikariDataSource
     initialization-mode: always
     continue-on-error: true
-    #    schema:
-    #      - "classpath:db/schema.sql"
-    #    data:
-    #      - "classpath:db/data.sql"
+#    schema:
+#      - "classpath:db/schema.sql"
+#    data:
+#      - "classpath:db/data.sql"
     hikari:
       minimum-idle: 5
       connection-test-query: SELECT 1 FROM DUAL
@@ -30,6 +20,10 @@ spring:
       pool-name: SpringBootDemoHikariCP
       max-lifetime: 60000
       connection-timeout: 30000
+logging:
+  level:
+    com.rang: error
+    com.rang.mapper: trace
 mybatis:
   configuration:
     map-underscore-to-camel-case: true
@@ -49,7 +43,3 @@ pagehelper:
   helper-dialect: mysql
   reasonable: true
   params: count=countSql
-logging:
-  level:
-    com.xkcoding: debug
-    com.rang.mapper: trace
