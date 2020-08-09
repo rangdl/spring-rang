@@ -1,6 +1,6 @@
-package com.rang.service.user;
+package com.rang.service.dao;
 
-import com.rang.pojo.entity.User;
+import com.rang.pojo.entity.UserDO;
 
 /**
  * @ClassName UserService
@@ -11,5 +11,5 @@ import com.rang.pojo.entity.User;
  **/
 public interface UserService {
 
-	Long saveUser(User user);
+	Long saveUser(UserDO userDO);
 }

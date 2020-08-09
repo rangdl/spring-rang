@@ -1,7 +1,7 @@
 package com.rang.dao.mapper;
 
 import com.rang.dao.SpringRangDaoApplicationTests;
-import com.rang.pojo.entity.User;
+import com.rang.pojo.entity.UserDO;
 import java.time.LocalDate;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
@@ -26,7 +26,7 @@ public class TestMapperTest extends SpringRangDaoApplicationTests {
 	 */
 	@Test
 	public void testInsert() {
-		User testSave3 = User.builder().name("testSave3").age(11).state(1).time(LocalDate.now()).build();
+		UserDO testSave3 = UserDO.builder().name("testSave3").age(11).state(1).time(LocalDate.now()).build();
 		userMapper.insertUseGeneratedKeys(testSave3);
 		Assert.assertNotNull(testSave3.getId());
 		log.debug("【测试主键回写#testSave3.getId()】= {}", testSave3.getId());

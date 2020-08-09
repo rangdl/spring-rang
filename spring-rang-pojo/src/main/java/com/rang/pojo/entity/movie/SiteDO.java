@@ -1,4 +1,4 @@
-package com.rang.pojo.entity;
+package com.rang.pojo.entity.movie;
 
 import java.time.LocalDate;
 import javax.persistence.Id;
@@ -10,24 +10,30 @@ import lombok.NoArgsConstructor;
 import tk.mybatis.mapper.annotation.KeySql;
 
 /**
- * @ClassName Test
+ * @ClassName Site
  * @Description TODO
  * @Author rdl
- * @Date 2020/7/7 16:45
+ * @Date 2020/8/9 13:04
  * @Version 1.0
  **/
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Table(name = "test_user")
-public class User {
+@Table(name = "website")
+public class SiteDO {
 
+	/**
+	 * id
+	 */
 	@Id
 	@KeySql(useGeneratedKeys = true)
-	private Long id;
-	private String name;
+	private Integer id;
+	private Integer mId;
 	private Integer state;
-	private Integer age;
-	private LocalDate time;
+	private String name;
+	private String lineName;
+	private String url;
+	private LocalDate createdTime;
+	private LocalDate modifiedTime;
 }

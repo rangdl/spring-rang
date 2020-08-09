@@ -31,7 +31,7 @@
     <mysql.version>8.0.12</mysql.version>
     <hutool.version>5.0.0</hutool.version>
     <guava.version>28.1-jre</guava.version>
-    <user.agent.version>1.20</user.agent.version>
+    <userDO.agent.version>1.20</userDO.agent.version>
     <mybatis.mapper.version>2.0.4</mybatis.mapper.version>
     <mybatis.pagehelper.version>1.2.9</mybatis.pagehelper.version>
 
@@ -82,7 +82,7 @@
       <dependency>
         <groupId>eu.bitwalker</groupId>
         <artifactId>UserAgentUtils</artifactId>
-        <version>${user.agent.version}</version>
+        <version>${userDO.agent.version}</version>
       </dependency>
 
       <dependency>

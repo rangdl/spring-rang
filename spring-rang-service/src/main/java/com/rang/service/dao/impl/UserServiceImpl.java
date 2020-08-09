@@ -1,8 +1,8 @@
-package com.rang.service.impl.user;
+package com.rang.service.dao.impl;
 
 import com.rang.dao.mapper.UserMapper;
-import com.rang.pojo.entity.User;
-import com.rang.service.user.UserService;
+import com.rang.pojo.entity.UserDO;
+import com.rang.service.dao.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,8 +21,8 @@ public class UserServiceImpl implements UserService {
 
 
 	@Override
-	public Long saveUser(User user) {
-		userMapper.insertUseGeneratedKeys(user);
-		return user.getId();
+	public Long saveUser(UserDO userDO) {
+		userMapper.insertUseGeneratedKeys(userDO);
+		return userDO.getId();
 	}
 }

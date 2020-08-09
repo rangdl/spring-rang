@@ -10,9 +10,9 @@ spring:
     servlet:
       content-type: text/html
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/spring-boot-demo?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false&serverTimezone=GMT%2B8
+    url: jdbc:mysql://39.105.189.97:3306/movies?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false&serverTimezone=GMT%2B8
     username: root
-    password: root
+    password: rdl.+0317
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.zaxxer.hikari.HikariDataSource
     initialization-mode: always
@@ -49,7 +49,7 @@ pagehelper:
   helper-dialect: mysql
   reasonable: true
   params: count=countSql
-#logging:
-#  level:
-#    com.rang: debug
-#    com.rang.mapper: trace
+logging:
+  level:
+    com.rang: debug
+    com.rang.mapper: trace
