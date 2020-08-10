@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Version 1.0
  **/
 @RestController
-@RequestMapping("site")
+@RequestMapping("sites")
 public class SiteController {
 
 	@Autowired
