@@ -25,6 +25,7 @@
       <groupId>com.rang</groupId>
       <artifactId>spring-rang-core</artifactId>
     </dependency>
+
     <dependency>
       <groupId>com.rang</groupId>
       <artifactId>spring-rang-service</artifactId>

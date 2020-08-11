@@ -67,17 +67,17 @@
         <version>${mysql.version}</version>
       </dependency>
       <!-- hutool工具类 -->
-      <!--<dependency>-->
-        <!--<groupId>cn.hutool</groupId>-->
-        <!--<artifactId>hutool-all</artifactId>-->
-        <!--<version>${hutool.version}</version>-->
-      <!--</dependency>-->
-      <!--&lt;!&ndash; guava工具类 &ndash;&gt;-->
-      <!--<dependency>-->
-        <!--<groupId>com.google.guava</groupId>-->
-        <!--<artifactId>guava</artifactId>-->
-        <!--<version>${guava.version}</version>-->
-      <!--</dependency>-->
+      <dependency>
+        <groupId>cn.hutool</groupId>
+        <artifactId>hutool-all</artifactId>
+        <version>${hutool.version}</version>
+      </dependency>
+      <!-- guava工具类 -->
+      <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>${guava.version}</version>
+      </dependency>
       <!-- 解析 UserAgent 信息 -->
       <dependency>
         <groupId>eu.bitwalker</groupId>
