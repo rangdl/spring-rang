@@ -1,6 +1,7 @@
 package com.rang.web;
 
 import com.rang.web.listener.ApplicationReadyEventListener;
+import com.thebeastshop.forest.springboot.annotation.ForestScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -18,6 +19,7 @@ import tk.mybatis.spring.annotation.MapperScan;
 @SpringBootApplication
 @MapperScan("com.rang.dao")
 @ComponentScan({"com.rang.core","com.rang.service","com.rang.web"})
+@ForestScan(basePackages = "com.rang.web.site")
 public class SpringRangWebApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
