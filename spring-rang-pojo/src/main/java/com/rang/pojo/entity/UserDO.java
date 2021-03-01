@@ -3,6 +3,7 @@ package com.rang.pojo.entity;
 import java.time.LocalDate;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -23,11 +24,11 @@ import tk.mybatis.mapper.annotation.KeySql;
 @Table(name = "test_user")
 public class UserDO {
 
-	@Id
-	@KeySql(useGeneratedKeys = true)
-	private Long id;
-	private String name;
-	private Integer state;
-	private Integer age;
-	private LocalDate time;
+    @Id
+    @KeySql(useGeneratedKeys = true)
+    private Long id;
+    private String name;
+    private Integer state;
+    private Integer age;
+    private LocalDate time;
 }

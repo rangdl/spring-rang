@@ -13,8 +13,8 @@ import tk.mybatis.spring.annotation.MapperScan;
 //@MapperScan(basePackages = {"com.rang.dao.mapper"})
 public class SpringRangServiceApplicationTests {
 
-	@Test
-	public void contextLoads() {
-	}
+    @Test
+    public void contextLoads() {
+    }
 
 }

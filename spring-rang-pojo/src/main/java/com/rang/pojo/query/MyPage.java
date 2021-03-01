@@ -11,7 +11,7 @@ import lombok.Data;
  **/
 @Data
 public class MyPage {
-	private Integer pageNum = 1;
-	private Integer pageSize = 10;
-	private String OrderBy = "";
+    private Integer pageNum = 1;
+    private Integer pageSize = 10;
+    private String OrderBy = "";
 }

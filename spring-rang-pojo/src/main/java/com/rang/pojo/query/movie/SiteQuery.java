@@ -15,5 +15,5 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class SiteQuery {
-	private Integer mId;
+    private Integer mId;
 }

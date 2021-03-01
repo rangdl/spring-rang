@@ -12,11 +12,11 @@ import com.rang.core.contant.StatusEnum;
  **/
 public class PageException extends BaseException {
 
-	public PageException(StatusEnum statusEnum) {
-		super(statusEnum);
-	}
+    public PageException(StatusEnum statusEnum) {
+        super(statusEnum);
+    }
 
-	public PageException(Integer code, String message) {
-		super(code, message);
-	}
+    public PageException(Integer code, String message) {
+        super(code, message);
+    }
 }

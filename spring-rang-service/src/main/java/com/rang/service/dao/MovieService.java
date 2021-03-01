@@ -11,5 +11,5 @@ import com.rang.pojo.query.movie.MovieQuery;
  * @Version 1.0
  **/
 public interface MovieService {
-	PageInfo selectMovies(MovieQuery movieQuery);
+    PageInfo selectMovies(MovieQuery movieQuery);
 }

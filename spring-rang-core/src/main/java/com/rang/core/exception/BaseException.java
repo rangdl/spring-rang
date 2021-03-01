@@ -4,6 +4,7 @@ import com.rang.core.contant.StatusEnum;
 
 /**
  * 全局基础异常类
+ *
  * @ClassName BaseException
  * @Author rdl
  * @Date 2020/6/20 16:18

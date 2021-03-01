@@ -14,6 +14,6 @@ import tk.mybatis.mapper.common.MySqlMapper;
  * @Version 1.0
  **/
 @Component
-public interface SiteMapper  extends Mapper<SiteDO>, MySqlMapper<SiteDO> {
+public interface SiteMapper extends Mapper<SiteDO>, MySqlMapper<SiteDO> {
 
 }

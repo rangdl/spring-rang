@@ -1,6 +1,7 @@
 package com.rang.service.dao;
 
 import com.rang.pojo.entity.movie.SiteDO;
+
 import java.util.List;
 
 /**
@@ -11,5 +12,5 @@ import java.util.List;
  * @Version 1.0
  **/
 public interface SiteService {
-	List<SiteDO> selectSites(Integer mId);
+    List<SiteDO> selectSites(Integer mId);
 }

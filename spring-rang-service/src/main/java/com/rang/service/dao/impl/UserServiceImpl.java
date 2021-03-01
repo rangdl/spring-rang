@@ -16,13 +16,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserServiceImpl implements UserService {
 
-	@Autowired
-	private UserMapper userMapper;
+    @Autowired
+    private UserMapper userMapper;
 
 
-	@Override
-	public Long saveUser(UserDO userDO) {
-		userMapper.insertUseGeneratedKeys(userDO);
-		return userDO.getId();
-	}
+    @Override
+    public Long saveUser(UserDO userDO) {
+        userMapper.insertUseGeneratedKeys(userDO);
+        return userDO.getId();
+    }
 }

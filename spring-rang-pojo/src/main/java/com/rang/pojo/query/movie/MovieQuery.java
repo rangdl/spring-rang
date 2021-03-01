@@ -18,6 +18,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class MovieQuery extends MyPage implements IPage {
-	private String name;
-	private String type;
+    private String name;
+    private String type;
 }

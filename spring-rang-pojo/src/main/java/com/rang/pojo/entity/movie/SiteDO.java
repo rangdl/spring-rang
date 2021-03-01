@@ -3,6 +3,7 @@ package com.rang.pojo.entity.movie;
 import java.time.LocalDate;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -23,17 +24,17 @@ import tk.mybatis.mapper.annotation.KeySql;
 @Table(name = "website")
 public class SiteDO {
 
-	/**
-	 * id
-	 */
-	@Id
-	@KeySql(useGeneratedKeys = true)
-	private Integer id;
-	private Integer mId;
-	private Integer state;
-	private String name;
-	private String lineName;
-	private String url;
-	private LocalDate createdTime;
-	private LocalDate modifiedTime;
+    /**
+     * id
+     */
+    @Id
+    @KeySql(useGeneratedKeys = true)
+    private Integer id;
+    private Integer mId;
+    private Integer state;
+    private String name;
+    private String lineName;
+    private String url;
+    private LocalDate createdTime;
+    private LocalDate modifiedTime;
 }

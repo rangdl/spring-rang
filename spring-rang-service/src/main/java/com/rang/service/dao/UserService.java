@@ -11,5 +11,5 @@ import com.rang.pojo.entity.UserDO;
  **/
 public interface UserService {
 
-	Long saveUser(UserDO userDO);
+    Long saveUser(UserDO userDO);
 }

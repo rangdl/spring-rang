@@ -11,12 +11,12 @@ import tk.mybatis.spring.annotation.MapperScan;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @MapperScan("com.rang.dao")
-@ComponentScan({"com.rang.core","com.rang.service","com.rang.web"})
+@ComponentScan({"com.rang.core", "com.rang.service", "com.rang.web"})
 @ForestScan(basePackages = "com.rang.web.site")
 public class SpringRangWebApplicationTests {
 
-	@Test
-	public void contextLoads() {
-	}
+    @Test
+    public void contextLoads() {
+    }
 
 }

@@ -1,6 +1,7 @@
 package com.rang.web.site;
 
 import com.dtflys.forest.annotation.Request;
+
 import java.util.Map;
 
 /**
@@ -12,9 +13,9 @@ import java.util.Map;
  **/
 public interface TestClient {
 
-	@Request(
-			url = "http://ditu.amap.com/service/regeo?longitude=${0}&latitude=${1}",
-			dataType = "json"
-	)
-	Map getLocation(String longitude, String latitude);
+    @Request(
+            url = "http://ditu.amap.com/service/regeo?longitude=${0}&latitude=${1}",
+            dataType = "json"
+    )
+    Map getLocation(String longitude, String latitude);
 }

@@ -6,9 +6,11 @@ import com.rang.core.exception.PageException;
 import com.rang.core.model.ResultVO;
 import com.rang.pojo.entity.UserDO;
 import com.rang.service.dao.UserService;
+
 import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -24,32 +26,33 @@ import org.springframework.web.servlet.ModelAndView;
 @RestController
 public class TestController {
 
-	@Autowired
-	private UserService userService;
+    @Autowired
+    private UserService userService;
 
 
-	@GetMapping("/index")
-	public ResultVO index(){
-		Map<String,Object> map = new HashMap<>(3);
-		map.put("1",123);
-		map.put("name","index");
-		map.put("path","/index");
-		return ResultVO.ofSuccess(map);
-	}
-	@GetMapping("/hello")
-	public ResultVO hello(){
-		UserDO testSave3 = UserDO.builder().name("testSave3").age(11).state(1).time(LocalDate.now()).build();
-		Long id = userService.saveUser(testSave3);
-		return ResultVO.ofSuccess(id);
-	}
+    @GetMapping("/index")
+    public ResultVO index() {
+        Map<String, Object> map = new HashMap<>(3);
+        map.put("1", 123);
+        map.put("name", "index");
+        map.put("path", "/index");
+        return ResultVO.ofSuccess(map);
+    }
 
-	@GetMapping("/json")
-	public ResultVO jsonException() {
-		throw new JsonException(StatusEnum.ERROR);
-	}
+    @GetMapping("/hello")
+    public ResultVO hello() {
+        UserDO testSave3 = UserDO.builder().name("testSave3").age(11).state(1).time(LocalDate.now()).build();
+        Long id = userService.saveUser(testSave3);
+        return ResultVO.ofSuccess(id);
+    }
 
-	@GetMapping("/page")
-	public ModelAndView pageException() {
-		throw new PageException(StatusEnum.ERROR);
-	}
+    @GetMapping("/json")
+    public ResultVO jsonException() {
+        throw new JsonException(StatusEnum.ERROR);
+    }
+
+    @GetMapping("/page")
+    public ModelAndView pageException() {
+        throw new PageException(StatusEnum.ERROR);
+    }
 }

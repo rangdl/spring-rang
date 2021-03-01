@@ -3,6 +3,7 @@ package com.rang.core.model;
 import com.rang.core.contant.StatusEnum;
 import com.rang.core.exception.BaseException;
 import com.sun.istack.internal.Nullable;
+
 import java.io.Serializable;
 
 /**
@@ -70,6 +71,7 @@ public class ResultVO<T> implements Serializable {
     public static <T> ResultVO<T> ofSuccess() {
         return ofStatus(StatusEnum.SUCCESS);
     }
+
     /**
      * 构造一个成功且带数据的API返回
      *
@@ -104,7 +106,7 @@ public class ResultVO<T> implements Serializable {
      * 构造一个有状态且带数据的API返回
      *
      * @param statusEnum 状态 {@link StatusEnum}
-     * @param data   返回数据
+     * @param data       返回数据
      * @return ResultVO
      */
     public static <T> ResultVO<T> ofStatus(StatusEnum statusEnum, @Nullable T data) {
@@ -133,7 +135,6 @@ public class ResultVO<T> implements Serializable {
     public static <T extends BaseException> ResultVO<T> ofException(T t) {
         return ofException(t, null);
     }
-
 
 
     public Integer getCode() {
