@@ -16,7 +16,8 @@ public enum StatusEnum {
     /**
      * 未知异常
      */
-    ERROR(50000, "服务器出错!");
+    ERROR(50000, "服务器出错!"),
+    DATA_VALIDATION_ERROR(50002, "数据验证异常!");
 
     /**
      * 状态码
