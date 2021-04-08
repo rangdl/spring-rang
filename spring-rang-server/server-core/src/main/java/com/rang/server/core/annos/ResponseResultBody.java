@@ -1,5 +1,7 @@
 package com.rang.server.core.annos;
 
+import org.springframework.web.bind.annotation.ResponseBody;
+
 import java.lang.annotation.*;
 
 /**
