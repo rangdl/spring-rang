@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.rang</groupId>
+		<artifactId>spring-rang</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>spring-rang-server</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<modules>
+		<module>server-core</module>
+		<module>server-demo</module>
+	</modules>
+	<packaging>pom</packaging>
+
+	<name>spring-rang-server</name>
+	<description>Demo project for Spring Boot</description>
+
+
+	<properties>
+		<failOnMissingWebXml>false</failOnMissingWebXml>
+	</properties>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.rang.server</groupId>
+				<artifactId>server-core</artifactId>
+				<version>${spring.rang}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>

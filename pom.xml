@@ -8,6 +8,7 @@
     <artifactId>spring-rang</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
+        <module>spring-rang-server</module>
         <module>spring-rang-core</module>
         <module>spring-rang-tool</module>
         <module>spring-rang-pojo</module>
