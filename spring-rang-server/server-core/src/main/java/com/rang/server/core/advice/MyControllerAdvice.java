@@ -10,6 +10,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.server.ServerHttpRequest;
 import org.springframework.http.server.ServerHttpResponse;
+import org.springframework.web.bind.MissingServletRequestParameterException;
 import org.springframework.web.bind.ServletRequestBindingException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -68,9 +69,9 @@ public class MyControllerAdvice implements ResponseBodyAdvice<Object> {
      * @return 统一返回异常信息
      */
     @ResponseBody
-    @ExceptionHandler(value = ServletRequestBindingException.class)
-    public ResultVO ServletRequestBindingExceptionHandler(ServletRequestBindingException e) {
-        return ResultVO.ofStatus(StatusEnum.DATA_VALIDATION_ERROR,e.getLocalizedMessage());
+    @ExceptionHandler(value = MissingServletRequestParameterException.class)
+    public ResultVO ServletRequestBindingExceptionHandler(MissingServletRequestParameterException e) {
+        return ResultVO.ofStatus(StatusEnum.DATA_VALIDATION_ERROR,e.getMessage());
     }
 
     /**
